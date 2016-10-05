@@ -1,2 +1,2 @@
 # gwt_hibernate
-https://travis-ci.org/lMysticl/gwt_hibernate.svg?branch=master
+#https://api.travis-ci.org/repos/lMysticl/gwt_hibernate/cc.xml?branch=master
