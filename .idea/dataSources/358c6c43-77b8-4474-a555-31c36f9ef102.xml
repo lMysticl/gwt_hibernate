@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="META-INF:hibernate.cfg.xml/Hibernate">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="user">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema"/>
+    <schema id="3" name="line_chart"/>
+    <schema id="4" name="mysql"/>
+    <schema id="5" name="mysticdb"/>
+    <schema id="6" name="performance_schema"/>
+    <schema id="7" name="proff4"/>
+    <schema id="8" name="reminderdb"/>
+    <schema id="9" name="sys"/>
+    <table id="10" parent="1" name="userdb"/>
+    <column id="11" parent="10" name="user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11) unsigned zerofill|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="12" parent="10" name="login">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <column id="13" parent="10" name="password">
+      <mandatory>1</mandatory>
+      <data-type>longtext|0</data-type>
+    </column>
+    <column id="14" parent="10" name="firstname">
+      <mandatory>1</mandatory>
+      <data-type>varchar(45)|0</data-type>
+    </column>
+    <index id="15" parent="10" name="userdb_user_id_uindex">
+      <columns>user_id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="16" parent="10" name="PRIMARY">
+      <columns>user_id</columns>
+      <primary>1</primary>
+    </key>
+    <key id="17" parent="10" name="userdb_user_id_uindex">
+      <columns>user_id</columns>
+      <underlying-index>userdb_user_id_uindex</underlying-index>
+    </key>
+  </database-model>
+</dataSource>

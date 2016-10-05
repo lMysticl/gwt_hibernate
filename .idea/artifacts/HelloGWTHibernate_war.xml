@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="HelloGWTHibernate:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="HelloGWTHibernate-1.0.1.war">
+      <element id="artifact" artifact-name="HelloGWTHibernate:war exploded" />
+    </root>
+  </artifact>
+</component>
